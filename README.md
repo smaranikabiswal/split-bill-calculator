@@ -1,16 +1,23 @@
-# React + Vite
+# Split Bill Calculator 💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive web application designed to make splitting bills effortless. Whether you are splitting a total amount equally among friends or accounting for individual shared items, this tool has you covered.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[https://split-bill-calculator-ebon.vercel.app/](https://split-bill-calculator-ebon.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
+*   **Dual Split Modes:** Choose between an **Equal Split** for a quick calculation or an **Itemized Split** for complex shared expenses.
+*   **Customizable Details:** Easily input total bill amounts, tax percentages, and tip percentages to get an accurate final share.
+*   **User Management:** Add multiple people to the bill with a simple, intuitive interface.
+*   **Responsive UI:** Designed with a modern, user-friendly layout for both desktop and mobile use.
 
-## React Compiler
+## 🛠 Tech Stack
+*   **Frontend:** [React, CSS]
+*   **Deployment:** Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 👤 Credits
+Built with care by **Smaranika Biswal**. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*If you find this tool helpful or have suggestions for improvements, feel free to reach out via [smaranikab41@gmail.com](mailto:smaranikab41@gmail.com).*
