@@ -1,25 +1,19 @@
-function PeopleList({ people, removePerson, splitType, updateCustomAmount }) {
-  if (people.length === 0) return null;
-
+function PeopleList({ people, onRemove }) {
   return (
-    <div className="people-list">
-      <h3>People ({people.length})</h3>
-      {people.map((person) => (
-        <div className="person-row" key={person.id}>
-          <span>{person.name}</span>
-          {splitType === "custom" && (
-            <input
-              type="number"
-              placeholder="Amount ₹"
-              value={person.customAmount}
-              onChange={(e) => updateCustomAmount(person.id, e.target.value)}
-            />
-          )}
-          <button className="remove-btn" onClick={() => removePerson(person.id)}>
-            ✕
-          </button>
-        </div>
-      ))}
+    <div className="card">
+      <h2>People ({people.length})</h2>
+      {people.length === 0 ? (
+        <p className="hint">No one added yet. Add names above.</p>
+      ) : (
+        <ul className="people-list">
+          {people.map((p) => (
+            <li key={p.id} className="person-row">
+              <span className="person-name">{p.name}</span>
+              <button className="remove-btn" onClick={() => onRemove(p.id)} aria-label={`Remove ${p.name}`}>✕</button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
